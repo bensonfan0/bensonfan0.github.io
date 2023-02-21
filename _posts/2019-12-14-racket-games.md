@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Machine Learning Model - Squat Recognition
-subtitle: Users perform a squat in front of a webcam and the web application will correct improper exercise form
+title: Arcade Games
+subtitle: Arcade Games re-created. The caveat? Only recursion, and only in a functional programming language
 gh-repo: bensonfan0/squat-form-detector
 gh-badge: [star, fork, follow]
 tags: [Tensorflow, React, Node.js]
