@@ -25,7 +25,7 @@ medium_username: ''
 # Build settings
 markdown: kramdown
 # theme: phantom # Uncomment once published to RubyGems
-theme: minimal
+theme: minima
 plugins:
   - jekyll-paginate-v2
 
