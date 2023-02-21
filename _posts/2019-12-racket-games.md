@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Sample blog post
-subtitle: Each post also has a subtitle
-gh-repo: daattali/beautiful-jekyll
+title: Machine Learning Model - Squat Recognition
+subtitle: Users perform a squat in front of a webcam and the web application will correct improper exercise form
+gh-repo: bensonfan0/squat-form-detector
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [Tensorflow, React, Node.js]
 comments: true
 ---
 

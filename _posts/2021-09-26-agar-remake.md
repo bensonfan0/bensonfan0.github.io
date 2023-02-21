@@ -1,11 +1,13 @@
 ---
 layout: post
-title: Flake it till you make it
-subtitle: Excerpt from Soulshaping by Jeff Brown
+title: Agar Remake
+subtitle: A remake of agar.io which is a web game that features a multiplayer, player vs player Pacman-esque gameplay
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [books, test]
+gh-repo: bensonfan0/agar-remake
+gh-badge: [star, fork, follow]
+tags: [React, Javascript, Node.js]
 ---
 
 Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
