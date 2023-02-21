@@ -1,63 +1,31 @@
 ---
-layout: default
+layout: base
 ---
 
-{% include assets-origin.html %}
+{% include header.html type="page" %}
 
-<div class="row">
-
-  <!-- core -->
-  <div id="core-wrapper" class="col-12 col-lg-11 col-xl-9 pr-xl-4">
-    <div class="post pl-1 pr-1 pl-md-2 pr-md-2">
-
-    {% capture _content %}
-      {% if layout.refactor or page.layout == 'page' %}
-        {% include refactor-content.html content=content %}
-      {% else %}
-        {{ content }}
+<div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}" role="main">
+  <div class="row">
+    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
+      {% if page.before-content %}
+        <div class="before-content">
+          {% for file in page.before-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
       {% endif %}
-    {% endcapture %}
 
-    {% if page.layout == 'page' or page.collection == 'tabs' %}
-      {% assign tab_key = page.title | downcase %}
-      {% assign title = site.data.locales[site.lang].tabs[tab_key] | default: page.title %}
-      <h1 class="dynamic-title">
-        {{ title }}
-      </h1>
-      <div class="post-content">
-        {{ _content }}
-      </div>
-    {% else %}
-      {{ _content }}
-    {% endif %}
+      {{ content }}
 
+      {% if page.after-content %}
+        <div class="after-content">
+          {% for file in page.after-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% include comments.html %}
     </div>
-  </div> <!-- #core-wrapper -->
-
-  <!-- panel -->
-  <div id="panel-wrapper" class="col-xl-3 pl-2 text-muted">
-
-    <div class="access">
-      {% include update-list.html %}
-      {% include trending-tags.html %}
-    </div>
-
-    {% for _include in layout.panel_includes %}
-      {% assign _include_path = _include | append: '.html' %}
-      {% include {{ _include_path }} %}
-    {% endfor %}
-  </div>
-
-</div>
-
-<!-- tail -->
-{% if layout.tail_includes %}
-<div class="row">
-  <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 pl-3 pr-3 pr-xl-4 mt-5">
-    {% for _include in layout.tail_includes %}
-      {% assign _include_path = _include | append: '.html' %}
-      {% include {{ _include_path }} %}
-    {% endfor %}
   </div>
 </div>
-{% endif %}

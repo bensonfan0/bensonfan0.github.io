@@ -1,21 +1,13 @@
-# hidden files
-.*
-!.git*
-!.editorconfig
-!.nojekyll
-!.husky
-!.commitlintrc.json
-!.versionrc.json
-!.stylelintrc.json
-
-# bundler cache
+# project
 _site
-vendor
+.sass-cache
+.vagrant
+
+# general
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
 Gemfile.lock
 
-# rubygem
-*.gem
-
-# npm dependencies
-node_modules
-package-lock.json
+beautiful-jekyll-theme-*.gem
