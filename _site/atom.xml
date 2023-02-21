@@ -4,13 +4,22 @@
  <title>Hello. I&apos;m Benson Fan.</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2023-02-20T22:48:29-08:00</updated>
+ <updated>2023-02-20T23:04:40-08:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Benson Fan</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Testing</title>
+   <link href="http://localhost:4000/2023/02/19/test-post.html"/>
+   <updated>2023-02-19T00:00:00-08:00</updated>
+   <id>http://localhost:4000/2023/02/19/test-post</id>
+   <content type="html">
+</content>
+ </entry>
  
  <entry>
    <title>A</title>
