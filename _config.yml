@@ -19,7 +19,7 @@ description: "I'm a software developer and designer from Vancouver."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bensonfan0.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 twitter_username: ''
-github_username: 'benson0'
+github_username: 'bensonfan0'
 medium_username: ''
 
 # Build settings
